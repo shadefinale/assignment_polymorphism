@@ -1,4 +1,4 @@
 class Restaurant < ActiveRecord::Base
-  has_many :bands, :as => :location
+  has_many :bands, :as => :location, :dependent => :destroy
 
 end
