@@ -3,6 +3,8 @@ class CreateBands < ActiveRecord::Migration
     create_table :bands do |t|
       t.string :name
       t.string :genre
+      t.integer :location_id
+      t.string :location_type
 
       t.timestamps null: false
     end
